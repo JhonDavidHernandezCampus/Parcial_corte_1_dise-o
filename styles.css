@@ -1,0 +1,119 @@
+*{
+    color: rgb(0, 0, 0);
+
+
+}
+
+body{
+    /* background-image: linear-gradient(to left,#1C0001, #6B0200); */
+    height: 100vh;
+    margin: 0;
+    font-size: x-large;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Mynerve', cursive;
+}
+
+#fondo{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: medium none;
+    width: 2559px;
+    max-height: none;
+    max-width: none;
+    z-index: -1;
+    left: -497.242px;
+}
+.cabeza{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lista{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.logo{
+    width: 200px;
+}
+
+.ofertas{
+    display: flex;
+}
+/* 
+.header{
+    background-image: url(img/Captura\ desde\ 2023-03-17\ 01-00-51.png);
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+}  */
+
+
+.recome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid white 2px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 6px,20px,12px;
+    box-shadow: 10px 10px 100px black;
+    font-size: 40px;
+    width: 70%;
+
+}
+.ofertas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px;
+
+}
+
+#combo{
+    width: 700px;
+    border-radius: 30px;
+    margin-right: 80px;
+}
+.cont{
+    display: flex;
+    
+    
+}
+
+.imagenesof{
+    width: 250px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+thead{
+    display: flex;
+    background-color: aqua;
+
+}
+
+tbody{
+    display: flex;
+    background-color: blue;
+
+}
+
+.tbo{
+    box-shadow: 10px 10px 100px black;
+    display: flex;
+    border: solid 2px white;
+    border-radius: 30px;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
