@@ -8,10 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&family=Mynerve&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonst.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="main.js"></script>
     <title>LA MEJOR PAGINA</title>
 </head>
 <body>
-
+    <div class="imagen_fondo"></div>
     <!--  <img id="fondo" src="img/fondo-web.jpg" alt=""> -->
     <div class="contenedor">
         <header class="header">
@@ -43,7 +46,7 @@
                         </div>
                     </div>
                     <thead>
-                        <div class="tbo">
+                        <div class="tba">
                             <img class="imagenesof" src="img/thumbs.jpg" alt="">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ssssssssssssssss
                                     eum blanditiis cupiditate praesentium atque aspernatur soluta, dolores impedit nihil quos accusantium fugit non laborum sit deleniti perspiciatis adipisci itaque aliquid.</p>
@@ -51,30 +54,121 @@
                     </thead>    
                     <tbody>
                         <div class="tbo">
-                            <p>Visitamos ahora. Las mejores Amburguesas</p>
-                            <img class="imagenesof" src="img/lo-mejor-del-street-food.jpg" alt="">
+                            <div class="coj">
+                                <div class="di">
+                                    <h1>Visitamos !ahora¡.</h1><p>Las mejores Amburguesas <br> a tu a alcance</p>
+                                </div>
+                                    <img class="imagenesot" src="img/lo-mejor-del-street-food.jpg" alt="">
+                            </div>
+                            <div class="redes">
+                                <a href=""><img class="rede" src="img/facebook(1).png" alt=""></a>
+                                <a href=""><img class="rede" src="img/whatsapp(1).png" alt=""></a>
+                                <a href=""><img class="rede" src="img/gorjeo.png" alt=""></a>
+                            </div>
                         </div>
                     </tbody>
-
                 </article>
             </main> 
             <aside>
                 <div class="recomendados">
-                    
-
+                    <div class="recomen">
+                        <img class="recomenimg" src="img/pizza.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui 
+                            dicta quaerat fugiat eligendi debitis explicabo? Voluptas dolorum minima, iste at porro ipsam tempore quia distinctio itaque. Reiciendis perspiciatis placeat omnis!</p>
+                            <a class="comprar" href="https://www.pizzahut.com.co/">Comprar</a>
+                    </div>
+                    <div class="recomen">
+                        <img class="recomenimg" src="img/receta-perro-caliente-colombiano.jpg" alt="">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit perspiciatis saepe unde nobis 
+                            doloremque esse, soluta quod non natus maxime! Accusantium dolore deleniti sed. Praesentium voluptatibus officia similique harum beatae.</p>
+                            <a class="comprar" href="https://listado.mercadolibre.com.co/hot-dog">Comprar</a>
+                    </div>
+                    <div class="recomen">
+                        <img class="recomenimg" src="img/papitas.jpeg" alt="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium perferendis corrupti maxime velit ipsa adipisci et cum voluptatem quis, ipsum 
+                            inventore similique ducimus quo esse excepturi nisi corporis nihil. Architecto.</p>
+                            <a class="comprar" href="https://articulo.mercadolibre.com.co/MCO-566890395-patatas-fritas-con-aceite-de-oliva-buena-sal-sal-marina-_JM">Comprar</a>
+                    </div>
                 </div>
-                <div class="escribenos">
-
+                <div id="escribenos">
+                    <a href=""><img class="rede" src="img/facebook.png" alt=""></a>
+                    <a href=""><img class="rede" src="img/whatsapp.png" alt=""></a>
+                    <a href=""><img class="rede" src="img/signo-de-twitter.png" alt=""></a>
                 </div>
+                
             </aside>
         </div>
+        <section  class="formulario">
+                <form action="" >
+                    <div class="conte">
+                        <div class="parte1">
+                            <label for="nom">Ingrese su nombre: </label>
+                            <input type="text" id="nom" pattern="" required>
 
-        <footer>
+                            <label for="ape">Ingrese su apellido</label>
+                            <input type="text" id="ape" required>
+
+                            <label for="email">Digite su correo Electronico</label>
+                            <input type="email" id="email" name="email" >
+
+                            <label for="">Tipo de pedido?</label>
+                            <label for=""><input  type="radio" name="radio" value="azul"> Rapido
+                            <input  type="radio" name="radio" value="azul">Normal</label>
+                            
+                            <label for="tentacles">Alergico algun ingrediente?:</label>
+                            <input type="number"name="tentacles" min="1" required>
+
+                            <label for="chek">Ingredientes opcionales?</label>
+                            <label for="">
+                                <input name="estado" type="checkbox" id="chek" value="second_checkbox"> Peperoni <br>
+                                <input name="estado" type="checkbox" id="chek" value="second_checkbox"> Salsa de tomate<br>
+                                <input name="estado" type="checkbox" id="chek" value="second_checkbox"> Carne molida <br>
+                                <input name="estado" type="checkbox" id="chek" value="second_checkbox"> Agi <br>
+                            </label>
+
+                            <label for="nume">Ingrese su numero telefonico</label>
+                            <input type="tel" id="nume" required>
+                        </div>
+                        <div class="parte2" >
+
+                            <label for="meeting-time">Ingrese la fecha actual y la hora</label>
+                            <input type="datetime-local" id="meeting-time"
+                                name="meeting-time" value="2018-06-12T19:30"
+                                min="2018-06-07T00:00" max="2018-06-14T00:00">
+
+
+                            <label for="url">cual es la direccion de su casa?</label>
+                            <input type="tex" name="url" id="url" placeholder="calle # cr" size="30"
+                                >
+
+                            <label for="range">Que tanto le gusto la pagina?</label>
+                            <input type="range" id="range" >
+
+                            <label for="nome">Toque secreto, Elija un color por favor</label>
+                            <input type="color" id="nome" required>   
+
+                            <label for="fecha">Fecha de entre del pedido(solo en caso de ser para otro dia)</label>
+                            <input type="date" id="fecha" min="1900-01-01" max="2023-01-01">
+
+                            <label for="parrafo">Observaciones y peticiones: </label>
+                            <textarea name="parrafo" id="parrafo" cols="30" rows="12"></textarea>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <div id="botones"><button class="buton" type="reset" value="Reset">Restaurar</button>
+                        <button class="buton" type="submit">Enviar </button></div>
+                        
+                    </div>
+
+                </form>
+            </fieldset>
+        </section>
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
             <div class=""></div>
+            <span class="ir-arriba icon-arrow-up2"></span>
         </footer>
     </div>
 </body>
